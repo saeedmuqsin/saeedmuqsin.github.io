@@ -1,0 +1,1 @@
+// * Having an empty javascript

@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jua&display=swap');
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    margin:  0 auto;
+    padding: 0;
+}
+
+/* navigation*/
+#main-nav {
+    transition: background-color .5s ease;
+}
+
+a.navbar-brand {
+    font-family: 'Dancing Script', cursive;
+    font-size: 1.7rem;
+}
+
+a.nav-link {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: black;
+}
+
+#main-header{
+    background: linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url('/assert/Images/denis-pavlovic-NVu_zR3-aQQ-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    padding-top: 13rem;
+    padding-bottom: 15rem;
+}
+
+#main-header-heading {
+    font-size: 2.5rem;
+}
+
+.divider {
+    height: 1rem;
+    max-width: 3.25rem;
+    margin: 1.5rem auto;
+    background-color: #56cfe1;
+    opacity: 1;
+    padding: 0.1rem;
+}
+
+.btn-lg {
+    padding-top: 10px;
+}
+
+#subtitle, .eg{
+    font-size: 20px;
+}
+
+/* about page*/
+.page-about {
+    padding: 5rem 0;
+    background-color: #56cfe1;
+}
+
+.about-title {
+    font-size: 40px;
+    color: white;
+    font-family: 'Jua', sans-serif;
+}
+
+.about-body {
+    color: white;
+    font-size: 1.2rem;
+    padding: 0 2rem;
+}
+
+a.btn {
+    font-size: 1.2rem;
+}
+
+a.btn-lg{
+    background-color: #56cfe1;
+    border: none;
+}
+
+.btn-outline-light {
+    color: white;
+}
+
+a.btn-outline-light:hover {
+    background-color: white;
+    color: #56cfe1;
+}
+
+/* services */
+#services {
+    padding-top: 3rem;
+    padding-bottom: 4rem;
+}
+
+.service-body {
+    color: black;
+    padding: 10px;
+    font-size: 1.2rem;
+    font-weight: 400;
+}
+
+.service-title {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+#img-container {
+    position: relative;
+    height: 250px;
+}
+
+.picture-content {
+   display: none;
+   padding-top: 7rem;
+}
+
+.picture-title {
+    color: white;
+    font-size: 1.4rem;
+}
+
+.picture-name {
+    font-size: 30px;
+}
+
+#img-container:hover .picture-content{
+    width:100%;
+    height:100%;
+    background: #56cfe1;
+    opacity: 0.8;
+    position:absolute;
+    text-align: center;
+    top:0;
+    left:0;
+    display:inline-block;
+    -webkit-box-sizing:border-box;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+}
+
+.contact-form {
+    margin: auto;
+    max-width: 600px;
+    padding: 10px 20px;
+}
+
+.contact-title {
+    font-family: 'Dancing Script', cursive;
+    font-size: 3rem;
+}
+
+#Message {
+    height: 250px;
+}
+
+.telephone-no {
+    font-size: 1rem;
+    font-family: 'Jua', sans-serif ;
+}
+
+.brand-copyright {
+    width: 100%;
+    height: 70px;
+    opacity: 0.8;
+}
+
