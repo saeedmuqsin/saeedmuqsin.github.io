@@ -1,0 +1,136 @@
+body {
+    height: 100%;
+    width: 100%;
+    transition: all 0.7s ease-in;
+    margin: 0;
+  }
+  
+  .navbar {
+    background-color: #f1f1f146;
+    padding: 10px;
+  }
+
+  .navbar .brand-name {
+    color: #ffcf56;
+    font-size: 1.6rem;
+    font-family: "Matemasie", system-ui;
+    font-weight: 400;
+    text-decoration: none;
+    font-style: normal;
+    margin-left: 100px;
+  }
+  
+  .collapse {
+      margin: 0px 0px 0px 140px;
+  }
+  .navbar .navbar-nav {
+      margin-left: 200px;
+      padding: 2px;
+  }
+  
+  .navbar-nav li a {
+      font-size: 0.9rem;
+      font-weight: 600;
+      color: #1312129a;
+  }
+  .navbar .brand-name:hover {
+      color: #ffcf56;
+  }
+  
+  .navbar img {
+      height: 75px;
+      width: 75px;
+      margin-left: 350px;
+  }
+
+  .container {
+    width: 750px;
+    margin: 25px auto;
+  }
+
+  .container .heading {
+    font-size: 2rem;
+    font-family: "Matemasie", system-ui;
+    margin: 15px 0px;
+  }
+
+  .container p {
+    font-size: 1rem;
+  }
+
+  ul.stack-list {
+    width: 600px;
+    list-style: none;
+    padding: 5px;
+    margin: 25px  auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+ul.stack-list .stack {
+    padding: 10px 20px;
+    display: block;
+    text-align: center;
+    margin: 10px;
+}
+
+ul.stack-list .stack img {
+    width: 45px;
+    height: 45px;
+    display: block;
+    margin: auto;
+}
+
+ul.stack-list .stack:hover {
+    background-color: #dddada5b;
+    border-radius: 10px;
+    transition: background-color 0.4s ease-in-out;
+}
+
+/* Moible phone view */
+@media screen and (max-width: 767px) {
+    .navbar {
+        border-bottom: 1px solid #f0eeee3a;
+        padding: 5px;
+    }
+
+    .navbar .navbar-toggler {
+        margin-top: -10px;
+        padding: 4px 10px;
+    }
+    .navbar .brand-name {
+        margin: 15px;
+        display: none;
+    }
+
+    .navbar img {
+        margin-left: -10px;
+        margin-top: -10px;
+        height: 75px;
+        width: 75px;
+    }
+
+    .navbar .navbar-nav {
+        margin-left: -120px;
+    }
+
+    .container {
+        width: 320px;
+    }
+    ul.stack-list {
+        width: 300px;
+        padding: 0px;
+    }
+
+    ul.stack-list .stack {
+        padding: 10px;
+    }
+
+    ul.stack-list .stack img {
+        width: 35px;
+        height: 35px;
+    }
+
+}
