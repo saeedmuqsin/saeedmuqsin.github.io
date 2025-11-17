@@ -1,470 +1,203 @@
 body {
-  height: 100%;
-  width: 100%;
-  margin: 0;
-}
-
-.navbar {
-  background-color: #f1f1f146;
-  padding: 10px;
-}
-.navbar .brand-name {
-  color: #ffcf56;
-  font-size: 1.6rem;
-  font-family: "Matemasie", system-ui;
-  font-weight: 400;
-  text-decoration: none;
-  font-style: normal;
-  margin-left: 100px;
-}
-
-.collapse {
-    margin: 0px 0px 0px 140px;
-}
-.navbar .navbar-nav {
-    margin-left: 200px;
-    padding: 2px;
-}
-
-.navbar-nav li a {
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #1312129a;
-}
-.navbar .brand-name:hover {
-    color: #ffcf56;
-}
-
-.navbar img {
-    height: 75px;
-    width: 75px;
-    margin-left: 350px;
-}
-
-#home {
     width: 100%;
-    height: 85svh;
-    background: url("/images/stacked-steps-haikei.png") no-repeat center;
+    height: 100%;
+    margin: 0;
+    background-position: center;
+    background-attachment: fixed;
     background-size: cover;
 }
 
-#home .container-fluid {
-    width: 75svw;
-    margin: auto;
+.nav__bar {
+    height: 20%;
+    width: 100%;
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-around;
+    justify-content: space-evenly;
+
+    .social__media {
+        a i {
+            font-size: 20px;
+            font-weight: 500;
+            color: rgb(167, 167, 167);
+            margin: 0px 5px;
+        }
+    }
+
+    .right__side {
+        a:hover {
+            box-shadow: 0px 0px 10px rgba(158, 157, 157, 0.493);
+            transition: box-shadow 0.4s ease-in;
+        }
+    }
 }
 
-#home .container-fluid img {
-    height: 350px;
-    width: 400px;
-    margin: 40px 0 0 0;
-    display: block;
-    animation: bounce 2s ease infinite;
-}
-
-#home .container-fluid .profile-bio {
-    width: 550px;
-    padding: 7px;
-    margin: auto;
-}
-
-
-#home .profile-bio h3 {
-    font-size: 2.2rem;
-    font-weight: 700;
-    color: #ffcf56;
-}
-
-#home .profile-bio h3 span {
-    color: #1f1e1e;
-    font-family: "Matemasie", system-ui;
-}
-
-#home .profile-bio p {
-    font-size: 0.95rem;
-    font-weight: 500;
-    margin-bottom: 5px;
-}
-
-.profile-bio .resume-btn {
-    color: #fff;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #ffcf56;
-    border-radius: 10px;
-    margin-top: 30px;
-    display: block;
-    border: 1px #1a191900 solid;
-    width: 100px;
-    font-weight: 600;
-}
-
-.profile-bio .resume-btn:hover {
-    box-shadow: 0px 7px 30px -7px rgba(173,173,173,1);
-    transition: box-shadow 0.6s ease-in-out;
-}
-
-@keyframes bounce
- {
-	0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
-	40% {transform: translateY(-30px);}
-	60% {transform: translateY(-15px);}
-}
-
-#personal-skills {
-    height: 40svh;
+#bio__section {
     width: 100%;
-}
+    height: 80%;
 
-#personal-skills .container h3 {
-    text-align: center;
-    font-family: "Matemasie", system-ui;
-    margin: 40px 0px 5px 0px;
-    font-size: 1.1rem;
-}
-
-#personal-skills .container p {
-    text-align: center;
-    font-style: normal;
-    font-size: 1.1rem;
-    font-weight: 400;
-}
-
-ul.stack-list {
-    width: 600px;
-    list-style: none;
-    padding: 5px;
-    margin: 25px auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-ul.stack-list .stack {
-    padding: 10px 20px;
-    display: block;
-    text-align: center;
-    margin: 10px;
-}
-
-ul.stack-list .stack img {
-    width: 45px;
-    height: 45px;
-    display: block;
-    margin: auto;
-}
-
-ul.stack-list .stack:hover {
-    background-color: #dddada5b;
-    border-radius: 10px;
-    transition: all 0.4s ease-in-out;
-    transform: scale(1.05);
-}
-
-#specialities .container{
-    padding: 15px;
-    margin: 30px auto;
-    height: 60svh;
-}
-
-#specialities .container h3 {
-    text-align: center;
-    font-size: 2rem;
-    padding: 10px;
-}
-
-#specialities .container p {
-    margin: -10px 150px 0 150px;
-    text-align: center;
-}
-
-#specialities .container .card-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding-top: 10px;
-}
-
-#specialities .container .card-group .Card{
-    width: 250px;
-    margin: 10px;
-    display: block;
-    padding: 10px;
-    border-radius: 10px;
-}
-
-
-#specialities .container .card-group .Card img {
-    height: 60px;
-    width: 60px;
-    padding: 15px;
-    background-color: #fff;
-    margin: 10px 14px 30px 10px;
-    display: block;
-    border-radius: 360px;
-}
-
-#specialities .container .card-group .Card h5 {
-    color: #ffcf56;
-    font-style: normal;
-}
-
-#specialities .Card p {
-    margin: 0;
-    display: block;
-    text-align: start;
-    font-size: 0.9rem;
-    font-weight: 600;
-    color: #161616;
-}
-
-#testimony .container {
-    padding: 65px 15px 10px 15px;
-    width: 850px;
-    height: 65svh;
-    margin: 10px auto;
-}
-
-#testimony .container h5 {
-    text-align: center;
-    font-size: 2rem;
-}
-
-#testimony .container p {
-    text-align: center;
-    padding: 7px;
-}
-
-#testimony .person-group {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: wrap;
-}
-
-#testimony .person-card {
-    padding: 15px;
-    width: 250px;
-    margin: 7px 5px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 5px;
-}
-
-#testimony .person-card img  {
-    height: 50px;
-    width: 50px;
-    margin: 5px 7px;
-    border-radius: 360px;
-}
-
-#testimony .person-card .body p {
-    font-size: 0.7rem;
-    margin: 7px 0px 5px 0px;
-}
-
-#testimony .person-card .body h6 {
-    font-size: 0.7rem;
-    font-weight: 700;
-    color: #ffcf56;
-}
-
-#contact {
-    width: 100%;
-    padding: 16px;
-    color: #000;
-    height: 90svh;
-}
-
-#contact .container .contact-form {
-    width: 450px;
-    margin: 20px auto 0 auto;
-}
-
-#contact .container p.sub-header {
-    margin: 15px 0;
-    text-align: center;
-    color: #161616;
-}
-
-.contact-form form {
-    padding: 25px;
-}
-
-.contact-form form .btn {
-    background-color: #ffcf56;
-    color: #fff;
-    display: block;
-    width: 100%;
-    margin: 15px 0 6px;
-    font-weight: 500;
-}
-
-#contact .container .social-platform {
-    text-align: center;
-}
-
-#contact .container .social-platform a {
-    color: #ffcf56;
-    font-size: 1.6rem;
-    margin: 5px 10px;
-    padding: 7px 15px;
-    border-radius: 7px;
-}
-
-#contact .container .social-platform a:hover {
-    color: #fff;
-    background-color: #ffcf56;
-    transition: all 0.6s ease-in-out;
-}
-
-/* Moible phone view */
-@media screen and (max-width: 767px) {
-    .navbar {
-        border-bottom: 1px solid #f0eeee3a;
-        padding: 5px;
-    }
-
-    .navbar .navbar-toggler {
-        margin-top: -10px;
-        padding: 4px 10px;
-    }
-    .navbar .brand-name {
-        margin: 15px;
-        display: none;
-    }
-
-    .navbar img {
-        margin-left: -10px;
-        margin-top: -10px;
-        height: 80px;
-        width: 80px;
-    }
-
-    .navbar .navbar-nav {
-        margin-left: -120px;
-    }
-
-    #home {
-        height: 60svh;
-    }
-
-    #home .container-fluid {
-        flex-direction: column-reverse;
-    }
-
-    #home .container-fluid img {
-        width: 220px;
-        height: 220px;
-        margin: auto auto 50px auto;
+    .container {
+        width: 90%;
         display: block;
+        margin: 0 auto;
+    }
+}
+
+#projects__section {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    .container {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+#track__record {
+    width: 100%;
+    height: 100vh;
+}
+
+#tech__stack {
+    width: 100%;
+    height: 80vh;
+}
+
+/* Tablet (768px and below) */
+@media (max-width: 900px) and (min-width: 481px) {
+    .nav__bar {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 15px;
+
+        div.social__media {
+            display: block;
+            margin: 10px 0px 0px 0px;
+        }
+
+        .nav__links {
+            gap: 10px;
+
+            li a {
+                font-size: 14px;
+            }
+        }
     }
 
-    #home .container-fluid .profile-bio {
-        width: 350px;
-        margin: 7px 0 0 0;
+    #bio__section {
+        background-color: red;
+        padding-top: 60px;
+
+        h3 {
+            font-size: 30px;
+        }
     }
 
-    #home .container-fluid .profile-bio h3{
-        font-size: 2rem;
-        display: block;
-        font-style: normal;
+    #track__record {
+        height: 80vh;
+
+        .container {
+            margin-top: 30px;
+            flex-direction: column-reverse;
+        }
+
+        .profile-image {
+            img {
+                width: 150px;
+                height: 150px;
+            }
+        }
+
+        .stats {
+            gap: 5px;
+            flex-direction: row;
+            width: 95%;
+            margin-top: 10px;
+
+            div {
+                width: 40%;
+            }
+        }
+    }
+}
+
+/* Mobile (480px and below) */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
     }
 
-    #home .container-fluid .profile-bio p {
-        font-size: 0.8rem;
-        font-style: normal;
-    }
-
-    #home .container-fluid .profile-bio .resume-btn {
-        font-size: 0.6rem;
-        width: 80px;
-        text-align: center;
-    }
-
-    #personal-skills {
-        height: 60svh;
-    }
-
-    #personal-skills .container {
-        padding-top: 30px;
-        text-align: center;
-    }
-    ul.stack-list {
-        width: 300px;
-        flex-wrap: wrap;
-    }
-
-    ul.stack-list .stack {
+    .nav__bar {
         padding: 10px;
+        gap: 10px;
+        display: flex;
+        flex-direction: row;
+
+        .nav__links {
+            width: 100%;
+
+            ul {
+                li a {
+                    font-size: 11px;
+                }
+            }
+        }
+
+        .social__media,
+        .right__side {
+            display: none;
+        }
     }
 
-    ul.stack-list .stack img {
-        width: 35px;
-        height: 35px;
+    #bio__section {
+        .container {
+            width: 90%;
+
+            h3 {
+                font-size: 20px;
+            }
+
+            p {
+                width: 90%;
+            }
+        }
     }
 
-    #personal-skills .container p {
-        text-align: center;
-        font-size: 1.1rem;
-        font-weight: 300;
-    }
+    #track__record {
+        height: 75vh;
+        margin: 20px 0px;
 
-    #specialities .container {
-        height: 100svh;
-    }
+        h3 {
+            font-size: 20px;
+        }
 
-    #specialities .container p {
-        margin: 0px 5px;
-        font-size: 0.8rem;
-    }
+        p {
+            font-size: 11px;
+            margin: 7px 0px;
+        }
 
-    #specialities .container .card-group {
-        flex-direction: column;
-        flex-wrap: wrap;
-    }
+        .container {
+            flex-direction: column-reverse;
 
-    #specialities .container .card-group .Card img {
-        display: block;
-        margin: 10px auto 15px auto;
-    }
-    
-    #specialities .container .card-group .Card h5 {
-        text-align: center;
-    }
+            .stats {
+                margin-top: 20px;
+                /* flex-direction: column; */
+                width: 90%;
 
-    #testimony .container {
-        width: 300px;
-        padding: 40px 0px;
-        height: 90svh;
-    }
+                div {
+                    width: 40%;
+                    margin: 10px;
 
-    #testimony .container h5 {
-        font-size: 1.5rem;
-        font-style: normal;
+                }
+            }
+        }
     }
-
-    #testimony .person-card {
-        margin: 15px 0px;
-    }
-
-    #contact .container .contact-form {
-        width: 350px;
-        margin-top: 25px;
-    }
-
 }
 
-/* Tablet view  */
-@media screen and (max-width: 767px) and (min-width: 1067px) {
-}
-
-/* Desktop view and laptop view  */
-@media screen and (min-width: 1067px) {
+/* Large screens (1200px and above) */
+@media (min-width: 1200px) {
+    .nav__bar {
+        padding: 25px;
+    }
 }
