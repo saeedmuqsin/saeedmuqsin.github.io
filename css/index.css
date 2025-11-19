@@ -285,7 +285,7 @@ body {
         .container {
             width: 95%;
             height: 40vh;
-           
+
             h3 {
                 font-size: 22px;
                 width: 70%;
@@ -503,15 +503,25 @@ body {
                 div {
                     width: 90%;
                     display: block;
+
+                    h3 {
+                        font-size: 15px;
+                        width: 100%;
+                    }
+
+                    p {
+                        font-size: 12px;
+                        width: 100%;
+                        text-align: center;
+                    }
                 }
             }
         }
     }
 }
-
-/* Large screens (1200px and above) */
+  /* Large screens (1200px and above) */
 @media (min-width: 1200px) {
     .nav__bar {
-        padding: 25px;
+            padding: 25px;
+        }
     }
-}
