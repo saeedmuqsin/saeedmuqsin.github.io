@@ -57,12 +57,45 @@ body {
 #track__record {
     width: 100%;
     height: 100vh;
+
+
 }
 
 #tech__stack {
     width: 100%;
-    height: 80vh;
+    height: 100%;
+
+    #sub__inner {
+        div:hover {
+            background-color: orangered;
+            color: #fff;
+            box-shadow: 0px 0px 15px rgba(255, 255, 255, 0.493);
+            transition: box-shadow 0.9s ease-in, background-color 0.5s ease-in;
+
+            a, p{
+                color: #fff;
+            }
+        }
+    }
 }
+
+#testmonials {
+    width: 100%;
+    height: auto;
+    text-align: center;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        width: 90%;
+        margin: 0 auto;
+    }
+}
+
+
 
 /* Tablet (768px and below) */
 @media (max-width: 900px) and (min-width: 481px) {
@@ -95,7 +128,7 @@ body {
     }
 
     #track__record {
-        height: 80vh;
+        height: 70vh;
 
         .container {
             margin-top: 30px;
@@ -118,6 +151,20 @@ body {
             div {
                 width: 40%;
             }
+        }
+    }
+
+    #tech__stack {
+        .container {
+            display: block;
+            padding: 0 auto;
+        }
+
+        #inner-1,
+        #inner-2 {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
         }
     }
 }
@@ -192,6 +239,73 @@ body {
                 }
             }
         }
+    }
+
+    #tech__stack {
+        h3 {
+            font-size: 20px;
+        }
+
+        p {
+            font-size: 12px;
+        }
+
+
+        .container {
+            padding: 10px;
+            display: block;
+            width: 100%;
+
+            #inner-1 {
+
+                width: 100%;
+                padding: 0;
+
+                #stack__card {
+                    width: 90%;
+                    margin: 0 auto;
+                    padding-block: 20px;
+
+                    h3 {
+                        font-size: 15px;
+                    }
+
+                    h1 {
+                        font-size: 18px;
+                    }
+
+                    p {
+                        width: 100%;
+                    }
+
+                    i {
+                        font-size: 25px;
+                        display: block;
+                    }
+                }
+
+                #sub__inner {
+                    flex-direction: column;
+
+                    div {
+                        width: 90%;
+                    }
+                }
+            }
+
+            #inner-2 {
+                width: 100%;
+
+                div {
+                    height: 45%;
+
+                    h2 {
+                        font-size: 20px;
+                    }
+                }
+            }
+        }
+
     }
 }
 
