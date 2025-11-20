@@ -190,6 +190,10 @@ body {
                 color: #fff;
             }
         }
+
+        #contact-modal {
+            width: 100%;
+        }
     }
 }
 
@@ -453,6 +457,7 @@ body {
             display: block;
             width: 100%;
 
+
             #inner-1 {
 
                 width: 100%;
@@ -483,6 +488,10 @@ body {
 
                 #sub__inner {
                     flex-direction: column;
+
+                    #contact-modal {
+                        width: 100%;
+                    }
 
                     div {
                         width: 90%;
