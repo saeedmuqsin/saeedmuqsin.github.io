@@ -15,7 +15,7 @@ body {
     padding: 20px;
     display: flex;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
 
     .social__media {
         a i {
@@ -246,7 +246,6 @@ body {
     }
 
     #bio__section {
-        background-color: red;
         padding-top: 60px;
 
         h3 {
@@ -254,8 +253,34 @@ body {
         }
     }
 
+    #projects__section {
+        width: 100%;
+        .container{
+            width: 95%;
+
+            #projects__cards {
+                flex-direction: column;
+                gap: 20px;
+
+                div {
+                    width: 100%;
+                    height: auto;
+                    padding-bottom: 40px;
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                    }
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+    }
     #track__record {
-        height: 70vh;
+        height: auto;
 
         .container {
             margin-top: 30px;
@@ -368,6 +393,17 @@ body {
         }
     }
 
+    #footer__page {
+        height: auto;
+        
+        .container {
+            height: auto;
+            h3 {
+                margin-top: 0px;
+            }
+        }
+    }
+
 }
 
 /* Mobile (480px and below) */
@@ -410,6 +446,36 @@ body {
                 width: 90%;
             }
         }
+    }
+
+    #projects__section {
+        width: 100%;
+        height: auto;
+        .container {
+            padding: 10px;
+            width: 95%;
+            height: auto;
+
+            #projects__cards {
+                flex-direction: column;
+                gap: 20px;
+
+                div {
+                    width: 100%;
+                    text-align: center;
+
+                    img {
+                        margin: 0 auto;
+                    }
+                    h3 {
+                        font-size: 20px;
+                    }
+                }
+
+            }
+        }
+
+        
     }
 
     #track__record {

@@ -15,31 +15,26 @@
 <body>
 
     <!-- Navbar  -->
-    <!-- <nav class="nav__bar">
-        <div class="social__media w-1/5 mx-10">
-            <a href=""><i class="bi bi-twitter-x"></i></a>
-            <a href=""><i class="bi bi-linkedin"></i></a>
-            <a href=""><i class="bi bi-facebook"></i></a>
-            <a href=""><i class="bi bi-github"></i></a>
-        </div>
+    <nav class="nav__bar">
 
-        <div class="nav__links w-3/5 mt-2">
-            <ul class="flex items-center justify-center gap-7">
-                <li class="font-semibold"><a href="">Home</a></li>
-                <li class="font-semibold"><a href="">My works</a></li>
-                <li class="font-semibold"><a href="">Testimonials</a></li>
-                <li class="font-semibold"><a href="">Blog</a></li>
-                <li class="font-semibold"><a href="">Contact</a></li>
-            </ul>
-        </div>
-
-        <div class="right__side w-1/5 mt-3">
-            <a href=""
+         <div class="right__side w-1/5 mt-3">
+            <a href="#hireMe__section"
                 class="bg-orange-500 text-white text-sm px-[20px] py-2 text-decoration-none font-semibold rounded-lg">
                 Hire Me
             </a>
         </div>
-    </nav> -->
+
+        <div class="nav__links w-3/5 mt-2">
+            <ul class="flex items-center justify-center gap-7">
+                <li class="font-semibold"><a href="#bio__section">Home</a></li>
+                <li class="font-semibold"><a href="#projects__section">My works</a></li>
+                <li class="font-semibold"><a href="#testmonials">Testmonials</a></li>
+                <li class="font-semibold"><a href="#development__process">Blog</a></li>
+            </ul>
+        </div>
+
+       
+    </nav>
 
     <!-- bio and portfolio picture section -->
     <section id="bio__section">
@@ -48,7 +43,7 @@
                 alt="">
             <h3 class="text-md text-black font-semibold mt-6 mb-3">👋Hi, I'm Seidu Abdul Muhsin.</h3>
             <h3 class="text-3xl text-black font-semibold">
-                Passionate <strong class="bg-orange-400 px-2 mx-1 text-white">Full Stack 🧑‍💻 Developer <br> Creating
+                Passionate <strong class="bg-orange-500 px-2 mx-1 text-white">Full Stack 🧑‍💻 Developer <br> Creating
                     innovative </strong>
                 web solutions
             </h3>
@@ -62,13 +57,48 @@
     </section>
 
     <!--  my projects and available -->
-    <section id="projects__section" class="py-10 bg-gray-100">
+    <section id="projects__section" class="py-10">
         <div class="container">
             <h2 class="text-2xl font-medium">
                 My <strong class="text-orange-500">Development Work</strong>
             </h2>
             <p class="pt-2 font-semibold text-gray-400">Diverse range of projects from Desktop to web applications</p>
+
             <!-- projects card -->
+            <div class="flex items-center justify-center my-10 text-left wrap gap-10" id="projects__cards">
+                <div class="w-1/4 bg-gray-50 p-5 rounded-lg h-[420px]">
+                    <img src="./images/covid-app.png" alt="">
+                    <h3 class="text-2xl font-medium mt-5 mb-2">Covid-19 App</h3>
+                    <p class="text-md text-gray-500 mb-5">The COVID-19 Tracking App is a full-stack, data-driven health
+                        monitoring platform designed to
+                        provide real-time insights into the spread, impact, and containment of the COVID-19 pandemic.
+                    </p>
+
+                    <a href="https://github.com/saeedmuqsin/Covid-19-Tracker" class="bg-orange-500 text-sm rounded-lg font-medium text-white px-4 py-2">View
+                        Project</a>
+                </div>
+                <div class="w-1/4 bg-gray-50 p-5 rounded-lg h-[420px]">
+                    <img src="./images/movie-app.png" alt="">
+                    <h3 class="text-2xl font-medium mt-5 mb-2">Movie Finder App</h3>
+                    <p class="text-md text-gray-500 mb-5">Movie Finder App is a smart and intuitive web application that
+                        allows users to search, explore, and discover movies using real-time data from a public movie
+                        API.</p>
+
+                    <a href="https://github.com/saeedmuqsin/Movie_Finder_App" class="bg-orange-500 text-sm rounded-lg font-medium text-white px-4 py-2">View
+                        Project</a>
+                </div>
+                <div class="w-1/4 bg-gray-50 p-5 rounded-lg h-[420px]">
+                    <img src="./images/amazon-app.jpg" alt="">
+                    <h3 class="text-2xl font-medium mt-5 mb-2">Amazon Prices Api</h3>
+                    <p class="text-md text-gray-500 mb-5">Amazon Prices App is a powerful price-tracking and
+                        product-search application that helps users monitor Amazon product prices in real time.
+                    </p>
+
+                    <a href="https://github.com/saeedmuqsin/Amazon-Price-Tracker" class="bg-orange-500 text-sm rounded-lg font-medium text-white px-4 py-2">View
+                        Project</a>
+                </div>
+
+            </div>
         </div>
     </section>
 
@@ -150,17 +180,23 @@
                         <i class="fa-solid fa-laptop text-xl"></i>
                         <h3 class="text-xl font-semibold mt-3">Web Development Services</h3>
                         <p class="mt-7 text-sm text-gray-400">Customize Solutions for Your business.</p>
-                        <a href="#" class="block mt-10 text-orange-300 font-semibold" onclick="document.getElementById('contact-modal').classList.remove('hidden'); return false;">
+                        <a href="#" class="block mt-10 text-orange-300 font-semibold"
+                            onclick="document.getElementById('contact-modal').classList.remove('hidden'); return false;">
                             Contact <span><i class="fa-solid fa-arrow-right"></i></span>
                         </a>
                     </div>
 
                     <!-- Contact Modal -->
-                    <div id="contact-modal" class="fixed mx-auto inset-0 bg-gray-50 bg-opacity-50 flex items-center justify-center z-50 hidden" aria-hidden="true">
+                    <div id="contact-modal"
+                        class="fixed mx-auto inset-0 bg-gray-50 bg-opacity-50 flex items-center justify-center z-50 hidden"
+                        aria-hidden="true">
                         <div class="bg-white rounded-lg w-full max-w-lg p-6 mx-4 relative">
-                            <button id="contact-close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800" aria-label="Close">
-                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+                            <button id="contact-close" class="absolute top-3 right-3 text-gray-500 hover:text-gray-800"
+                                aria-label="Close">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24"
+                                    stroke="currentColor">
+                                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                        d="M6 18L18 6M6 6l12 12" />
                                 </svg>
                             </button>
 
@@ -170,22 +206,27 @@
                             <form id="contact-form" class="space-y-4">
                                 <div>
                                     <label for="name" class="block text-sm font-medium text-gray-700">Name</label>
-                                    <input id="name" name="name" required class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                                    <input id="name" name="name" required
+                                        class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
                                 </div>
 
                                 <div>
                                     <label for="email" class="block text-sm font-medium text-gray-700">Email</label>
-                                    <input id="email" name="email" type="email" required class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
+                                    <input id="email" name="email" type="email" required
+                                        class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300" />
                                 </div>
 
                                 <div>
                                     <label for="message" class="block text-sm font-medium text-gray-700">Message</label>
-                                    <textarea id="message" name="message" rows="4" required class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300"></textarea>
+                                    <textarea id="message" name="message" rows="4" required
+                                        class="mt-1 block w-full border border-gray-300 rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-orange-300"></textarea>
                                 </div>
 
                                 <div class="flex items-center justify-end gap-3">
-                                    <button type="button" id="contact-cancel" class="px-4 py-2 rounded-md bg-gray-100 text-gray-700">Cancel</button>
-                                    <button type="submit" class="px-4 py-2 rounded-md bg-orange-500 text-white">Send Message</button>
+                                    <button type="button" id="contact-cancel"
+                                        class="px-4 py-2 rounded-md bg-gray-100 text-gray-700">Cancel</button>
+                                    <button type="submit" class="px-4 py-2 rounded-md bg-orange-500 text-white">Send
+                                        Message</button>
                                 </div>
                             </form>
                         </div>
@@ -400,7 +441,8 @@
         <div class="container p-15 my-10 w-10/12 mx-auto  flex items-center justify-center rounded-lg">
             <div class="w-1/2 block">
                 <h3 class="text-orange-500 text-4xl font-bold">Transforming Ideas into Reality.</h3>
-                <p class="text-sm font-semibold my-3 text-gray-500">Contact me today to discuss your project and bring it to life.</p>
+                <p class="text-sm font-semibold my-3 text-gray-500">Contact me today to discuss your project and bring
+                    it to life.</p>
                 <div class="flex items-center">
                     <a href="" class="text-white bg-orange-400 px-5 py-2 text-sm font-medium rounded-md">Hire Me</a>
                     <a href="" class="text-sm font-medium bg-gray-50 shadow-md rounded-md px-5 py-2 mx-2">Contact Me</a>
@@ -429,9 +471,12 @@
             </div>
         </div>
         <div class="flex items-center justify-center gap-2 mt-[-5px]">
-            <a href="https://x.com/_thesaid?t=SmS1tGpR050RHuprBBYyGA&s=09" class="text-2xl"><i class="fa-brands fa-x-twitter"></i></a>
-            <a href="https://www.linkedin.com/in/saeed-muhsin-00570a214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="https://www.facebook.com/profile.php?id=100092526015823&mibextid=ZbWKwL" class="text-2xl"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://x.com/_thesaid?t=SmS1tGpR050RHuprBBYyGA&s=09" class="text-2xl"><i
+                    class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.linkedin.com/in/saeed-muhsin-00570a214?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                class="text-2xl"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/profile.php?id=100092526015823&mibextid=ZbWKwL" class="text-2xl"><i
+                    class="fa-brands fa-facebook"></i></a>
             <a href="https://github.com/saeedmuqsin" class="text-2xl"><i class="fa-brands fa-github"></i></a>
         </div>
     </footer>
